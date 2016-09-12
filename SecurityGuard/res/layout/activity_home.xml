@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="功能列表" />
+
+    <!--
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="凉风有幸，秋月无边，亏我思娇的情绪好比度日如年,虽然我不是玉树临风,潇洒倜傥,可是我有广阔的胸襟,加强健的臂弯!"
+        android:textColor="#000000"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"/>
+-->
+    <com.example.securityguard.view.FocusTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="凉风有幸，秋月无边，亏我思娇的情绪好比度日如年,虽然我不是玉树临风,潇洒倜傥,可是我有广阔的胸襟,加强健的臂弯!"
+        android:textColor="#000000" >
+    </com.example.securityguard.view.FocusTextView>
+    <!-- android:numColumns指定列数-->
+
+    <GridView
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+</LinearLayout>

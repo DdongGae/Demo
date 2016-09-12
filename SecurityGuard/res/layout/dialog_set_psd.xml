@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleStyle"
+        android:background="#8CEA00"
+        android:text="设置密码" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_set_psd"
+        android:hint="设置密码" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_confirm_psd"
+        android:hint="确认密码" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button 
+            android:id="@+id/bt_submit"
+            android:layout_width="0dp"
+            android:text="确定"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <Button 
+            android:id="@+id/bt_cancel"
+            android:layout_width="0dp"
+            android:text="取消"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
